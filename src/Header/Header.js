@@ -15,11 +15,11 @@ const Header = () => {
 
   return (
     <div>
-      <div className="navbar bg-zinc-300">
+      <div className="navbar bg-zinc-300  grid-cols-1">
         <div className="flex-1">
-          <a className="btn btn-bg-neutral-700 normal-case text-xl">
+         <Link to={'/'}> <a className="btn btn-bg-neutral-700 normal-case text-xl">
             Be Tech Master
-          </a>
+          </a></Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
