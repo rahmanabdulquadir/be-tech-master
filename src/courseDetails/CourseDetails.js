@@ -6,10 +6,9 @@ const CourseDetails = () => {
     <div>
       <div className="mx-auto card w-96 bg-primary text-primary-content">
   <div className="card-body">
-    <h2 className="card-title">Congrats!! You have enrolled to this course</h2>
-    <p>You are ginne get the further checkout details through your email verification</p>
+    <h2 className="card-title">Congrats!! You have choosen your desiarable tech course</h2>
     <div className="card-actions justify-end">
-      <Link to={'/checkout'}><button className="btn">Get Premium Access</button></Link>
+      <Link to={'/checkout'}><button className="btn">Check Out</button></Link>
     </div>
   </div>
 </div>
