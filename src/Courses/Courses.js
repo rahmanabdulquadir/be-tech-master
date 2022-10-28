@@ -20,15 +20,15 @@ const Courses = () => {
      <div>
      {
         courses.map(course => <p key={course.id}>
-          <Link to={`/courses/${course.id}`}>{course.name}</Link>
+          <Link to={`/courseDetails`}>{course.name}</Link>
         </p>)
       }
      </div>
       <div>
       {
-        courses.map(course => <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        courses.map(course => <div> <div className="card card-compact w-96 bg-base-100 shadow-xl ">
         <figure></figure>
-        <div className="card-body">
+        <div className="card-body ">
           <img src={course.img} alt="" />
           <h2 className="card-title">{course.name}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -36,7 +36,7 @@ const Courses = () => {
             <Link to={'/courseDetails'}><button className="btn btn-primary">Get Premium Access</button></Link>
           </div>
         </div>
-      </div>)
+      </div> </div>)
       }
       </div>
      </div>
