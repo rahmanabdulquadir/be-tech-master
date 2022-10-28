@@ -38,7 +38,7 @@ const Header = () => {
                 Blog
               </Link>
               {user?.email && (
-                <span className="text-black  ">Welcome, {user.email}</span>
+                <span className="text-black  ">Welcome <br /> {user.email}</span>
               )}
                {
           user?.email ? 
