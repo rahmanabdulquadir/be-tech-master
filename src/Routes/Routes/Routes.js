@@ -34,7 +34,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: '/courses',
-        element: <Courses></Courses>
+        element: <PrivateRoute><Courses></Courses></PrivateRoute>
       },
       // {
       //   path: '/courses/:id',
@@ -60,6 +60,12 @@ export const routes = createBrowserRouter([
   },
   {
     path: '*',
-    element: <div>Oops You Have Entered In A Wrong Route</div>
+    element: <div>
+       <div className="card w-96 bg-primary text-primary-content mx-auto">
+          <div className="card-body mx-auto">
+            <h2 className="card-title">404!!! You have entered in a wrong route!!!</h2>
+          </div>
+        </div>
+    </div>
   }
 ])
