@@ -32,7 +32,7 @@ const Courses = () => {
           <h2 className="card-title">{course.name}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
-            <Link to={'/courseDetails'}><button className="btn btn-primary">Buy Now</button></Link>
+            <Link to={'/courseDetails'}><button className="btn btn-primary">Get Premium Access</button></Link>
           </div>
         </div>
       </div>)
