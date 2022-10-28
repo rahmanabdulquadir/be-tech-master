@@ -16,13 +16,13 @@ const Header = () => {
   return (
     <div>
       <div className="navbar bg-zinc-300  grid-cols-1">
-        <div className="flex-1">
+        <div className="md:flex-1">
          <Link to={'/'}> <a className="btn btn-bg-neutral-700 normal-case text-xl">
             Be Tech Master
           </a></Link>
         </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal p-0">
+        <div className="md:flex">
+          <ul className="md:flex menu menu-horizontal p-0">
             <li>
               <Link className="text-black" to={"/courses"}>
                 Courses

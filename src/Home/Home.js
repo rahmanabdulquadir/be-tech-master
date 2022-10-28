@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='flex justify-evenly items-center mt-32'>
+    <div className=' justify-evenly items-center mt-32 md:flex'>
       <div>
         <h1 className='text-5xl mb-7'>Start Learning and Explore <br /> Your Top Technologies</h1>
         <Link to={'/login'}><button className="btn btn-outline mr-7">Login</button></Link>
