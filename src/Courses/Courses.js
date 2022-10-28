@@ -15,18 +15,17 @@ const Courses = () => {
 
   return (
     <div>
-      <h2>All Courses: {courses.length}</h2>
-     <div className='flex justify-evenly'>
+     <div className='flex justify-evenly mt-10'>
      <div>
      {
-        courses.map(course => <p key={course.id}>
+        courses.map(course => <p className='text-2xl mb-7' key={course.id}>
           <Link to={`/courseDetails`}>{course.name}</Link>
         </p>)
       }
      </div>
       <div>
       {
-        courses.map(course => <div> <div className="card card-compact w-96 bg-base-100 shadow-xl ">
+        courses.map(course => <div> <div className="card card-compact w-96 bg-base-100 shadow-xl">
         <figure></figure>
         <div className="card-body ">
           <img src={course.img} alt="" />
